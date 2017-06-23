@@ -38,6 +38,10 @@ export class DataBindingComponent implements OnInit {
         this.isMouseOver = !this.isMouseOver;
     }
 
+    onMudouValor(evento){
+        console.log(evento.novoValor);
+    }
+
   onKeyUp(evento: KeyboardEvent){
     //console.log((<HTMLInputElement>evento.target).value);
     this.valorAtual = (<HTMLInputElement>evento.target).value;
