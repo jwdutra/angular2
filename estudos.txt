@@ -2,6 +2,7 @@
 https://github.com/loiane/curso-angular2
 
 Significado dos tipos de arquivos
+=================================
 
 - Componente
   Arquivo typescript - ex: cursos.component.ts
@@ -16,7 +17,7 @@ Significado dos tipos de arquivos
   Faz a ligação com o servidor buscando as informações e entregando ao componente para ser mostrado ao template.
   
  - Teste
-	Arquivo para testes unitários do componente - ex: cursos.component.spec.ts
+    Arquivo para testes unitários do componente - ex: cursos.component.spec.ts
 	
 	
   
@@ -25,6 +26,7 @@ Significado dos tipos de arquivos
 
 
 Ambiente
+========
 
 1 - Instalar node.js
 
@@ -32,9 +34,30 @@ Ambiente
 
 	npm install -g typescript
 	
-3 - inetalar angular-cli	
+3 - instalar angular-cli
 	
 	npm install -g @angular/cli
+
+3.1 - Criar projeto
+
+	ng new <nome do projeto>   (Cria uma pasta com um projeto dentro dela)
+	ng init (este comando dentro de uma pasta cria um projeto dentro dela)
+
+3.2 - Criar projetosd com pré-processadores
+
+	ng new <nome do projeto> --style=sass
+
+	ng new <nome do projeto> --style=less
+
+	ng new <nome do projeto> --style=stylus
+
+3.3 - modificando o projeto para usar pé-processador (dentro da pasta do projeto)
+
+	ng set defaults.styleExt scss
+
+	ng set defaults.styleExt less
+
+	ng set defaults.styleExt styl
 	
 4 - iniciar servidor
 
@@ -52,3 +75,64 @@ Ambiente
 
 	ng g s <nome da classe de serviço>
 		
+
+
+
+
+Outros recursos
+===============
+
+- ng lint
+
+  Verifica erros e uso de melhores práticas e padrões de código do Angular (style guide)
+
+
+- ng test
+
+  Executaos testes unitários (jasmine) implementados
+
+- ng n2n
+
+  Executa os testes de integração n2n com Protector
+
+
+
+Gerando o build do projeto
+
+- ng build (de dentro do projeto)
+
+    Gera o build sem obfuscar
+
+- ng build --dev
+
+    Gera o build sem obfuscar
+
+
+- ng build --dev --e=dev
+
+
+- ng build --target=development --enviroment=dev
+
+
+
+- ng build --prod
+
+    ofusca e minifica o js da aplicação
+
+
+- ng build --prod --env=prod
+
+
+- ng build --target=production --enviroment=prod
+
+
+Para testar a aplicação
+======================
+
+- Instalar o http-server do node
+
+    npm install http-server -g
+
+- Iniciar o server
+
+
