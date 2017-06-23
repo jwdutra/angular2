@@ -1,7 +1,25 @@
 <!--The whole content below can be removed with the new code.-->
 
+<div class="panel panel-body">
+
   <h1>
     Welcome to {{title}}!!
   </h1>
 
-<app-data-binding></app-data-binding>
+  <app-data-binding></app-data-binding>
+
+  <br><br>
+
+  <h3>Ciclo de vida do componente</h3>
+
+  <app-ciclo [valorInicial]="valor" *ngIf="!deletarCiclo"></app-ciclo>
+
+  <br>
+
+  <button (click)="mudarValor()">Mudar valor</button>
+  <button (click)="destruirCiclo()">Deletar (destruir ciclo)</button>
+
+
+</div>
+
+<br><br>
