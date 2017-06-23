@@ -1,0 +1,54 @@
+
+https://github.com/loiane/curso-angular2
+
+Significado dos tipos de arquivos
+
+- Componente
+  Arquivo typescript - ex: cursos.component.ts
+  Webcomponent reutilizável
+  provê o template com informações
+  
+- Template
+  Arquivo HTML com o template - ex: cursos.component.html
+  
+- Service
+  Aquivo de serviços - ex: cursos.service.ts
+  Faz a ligação com o servidor buscando as informações e entregando ao componente para ser mostrado ao template.
+  
+ - Teste
+	Arquivo para testes unitários do componente - ex: cursos.component.spec.ts
+	
+	
+  
+	
+
+
+
+Ambiente
+
+1 - Instalar node.js
+
+2 - instalat typescript
+
+	npm install -g typescript
+	
+3 - inetalar angular-cli	
+	
+	npm install -g @angular/cli
+	
+4 - iniciar servidor
+
+	ng serve
+	
+5 - criar novo componente no angular-cli
+
+	ng g c <nome do componente>
+	
+6 - criar novo módulo no angular-cli
+
+	ng g m <nome do módulo>
+	
+7 - gerando uma classe de serviço
+
+	ng g s <nome da classe de serviço>
+		
