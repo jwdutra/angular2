@@ -7,3 +7,27 @@
   </li>
 </ul>
 
+<br><br><hr>
+
+<h3>Removendo o * e usando template</h3>
+
+<ul>
+  <li template="ngFor let curso of cursos, let i = index">
+    {{ i }} -  {{ curso }}
+  </li>
+</ul>
+
+<ul>
+  <template ngFor [ngForOf]="cursos" let-curso let-i="index">
+    <li>
+      {{ i }} -  {{ curso }}
+    </li>
+    </template>
+</ul>
+
+
+
+
+
+
+

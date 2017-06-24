@@ -18,9 +18,7 @@
   Não há cursos a listar  
 </div>
 
-<br>
-
-<br>
+<br><br><hr>
 
 <div [hidden]="!mostrarCursos">
   Hidden inativo  
@@ -33,3 +31,19 @@
 <br>
 
 <button (click)="onMostrarCursos()">Mostrar ou esconder</button>
+
+<br><br><hr>
+
+<h3>Removendo o * e usando template</h3>
+
+<div *ngIf="mostrarCursos">
+  Lista de cursos  
+</div>
+
+<template [ngIf]="mostrarCursos">
+  <div> Lista de cursos aqui   </div>
+</template>
+
+<div template="ngIf mostrarCursos">
+  Lista de cursos  
+</div>
