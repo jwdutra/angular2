@@ -1,3 +1,5 @@
+<h1> $ngClass</h1>
+
 
 <h1>
   <i  class="gliphicon"
@@ -16,3 +18,36 @@
   (click)="onClick()" 
   ></i>
 </h1>
+
+<br><br><hr>
+
+<h1> $ngStyle</h1>
+
+<button
+  [style.backgroundColor]="ativo ? 'blue' : 'gray'" 
+  [style.color]="ativo ? 'white' : 'black'" 
+  [style.fontWeight]="ativo ? 'bold' : 'normal'" 
+  [style.fontSize]="tamanhoFonte + 'px'" 
+  (click)="mudarAtivo()"
+> 
+Mudar atributo 'ativo'
+</button>
+
+<input type="text" [(ngModel)]="tamanhoFonte">
+
+<br><br><hr>
+
+
+<button
+  [ngStyle]="{
+    'backgroundColor': (ativo ? 'blue' : 'gray'), 
+    'color': (ativo ? 'white' : 'black'), 
+    'fontWeight': (ativo ? 'bold' : 'normal'), 
+    'fontSize': tamanhoFonte + 'px' 
+    }"
+  (click)="mudarAtivo()"
+> 
+Mudar atributo 'ativo'
+</button>
+
+<input type="text" [(ngModel)]="tamanhoFonte">
