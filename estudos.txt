@@ -43,7 +43,7 @@ Ambiente
 	ng new <nome do projeto>   (Cria uma pasta com um projeto dentro dela)
 	ng init (este comando dentro de uma pasta cria um projeto dentro dela)
 
-3.2 - Criar projetosd com pré-processadores
+3.2 - Criar projetos com pré-processadores
 
 	ng new <nome do projeto> --style=sass
 
@@ -75,7 +75,9 @@ Ambiente
 
 	ng g s <nome da classe de serviço>
 		
+8 - criando uma diretiva de atributo customizada
 
+  ng g d <nome da diretiva>
 
 
 
