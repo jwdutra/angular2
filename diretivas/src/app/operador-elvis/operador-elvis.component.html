@@ -1,0 +1,16 @@
+<p>
+  Descrição: {{ tarefa.desc }}
+</p>
+
+<p>
+  <!--Responsável: {{ tarefa.responsavel.nome }} -->
+  <!--Responsável: {{ tarefa.responsavel.nome != null ? tarefa.responsafel.nome : '' }}--> 
+</p>
+
+<p>
+  Responsável: {{ tarefa.responsavel?.usuario?.nome }} 
+</p>
+
+<!--
+  O uso da interrogação (operador elvis) protege conra erros em caso de valores nulos.
+-->
